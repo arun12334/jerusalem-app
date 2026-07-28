@@ -383,6 +383,71 @@ width:120px;
 }
 
 
+@media (max-width:768px){
+
+.hero-section{
+
+    height:300px;
+
+    background-image:url("assets/home/home-header-mobile.png");
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-size:cover;
+
+}
+
+.hero-content h1{
+
+    font-size:34px;
+
+}
+
+.hero-content p{
+
+    font-size:15px;
+
+}
+
+.divider span{
+
+    width:45px;
+
+}
+
+}
+
+@media (max-width:480px){
+
+.hero-section{
+
+    height:260px;
+
+    background-image:url("assets/home/home-header-mobile.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.hero-content h1{
+
+    font-size:28px;
+
+}
+
+.hero-content p{
+
+    font-size:13px;
+
+}
+
+}
+
+
 
 .feature-card{
     transition:.35s;
@@ -623,57 +688,77 @@ body{
 COMPACT FOOTER
 =========================*/
 
+/*=====================================
+COMPACT FOOTER
+=====================================*/
+
 .mini-footer{
 
     background:#0d2d68;
 
-    padding:18px 0;
-
     color:#fff;
 
+    padding:12px 0 10px;
+
 }
+
+/* Temple */
 
 .footer-temple{
 
-    width:150px;
+    width:90px;
+
+    height:auto;
 
 }
+
+/* Quote */
 
 .footer-quote{
 
     margin:0;
 
-    font-size:20px;
+    color:#ffffff;
+
+    font-size:14px;
 
     font-style:italic;
 
     font-weight:600;
 
+    line-height:1.4;
+
 }
+
+/* Article */
 
 .mini-footer h5{
 
     color:#d7a437;
 
-    margin-top:8px;
+    margin-top:4px;
 
     margin-bottom:0;
 
-    font-size:30px;
+    font-size:18px;
 
     font-weight:700;
 
 }
 
+/* Divider */
+
 .mini-footer hr{
+
+    margin:10px 0;
 
     border-color:#c99832;
 
-    opacity:.5;
-
-    margin:18px 0;
+    opacity:.45;
 
 }
+
+/* Scripture Links */
 
 .scripture-links{
 
@@ -681,11 +766,15 @@ COMPACT FOOTER
 
     justify-content:center;
 
+    align-items:center;
+
     flex-wrap:wrap;
 
-    gap:28px;
+    gap:0;
 
 }
+
+/* Each Link */
 
 .scripture-links a{
 
@@ -693,52 +782,92 @@ COMPACT FOOTER
 
     text-decoration:none;
 
-    font-size:26px;
+    font-size:13px;
 
     font-weight:600;
 
+    padding:0 18px;
+
+    position:relative;
+
+    white-space:nowrap;
+
+    transition:.3s;
+
 }
+
+/* Vertical Separator */
+
+.scripture-links a:not(:last-child)::after{
+
+    content:"|";
+
+    position:absolute;
+
+    right:0;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#c99832;
+
+    font-weight:400;
+
+}
+
+/* Hover */
 
 .scripture-links a:hover{
 
-    color:#fff;
+    color:#ffffff;
 
 }
 
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-.footer-temple{
+    .mini-footer{
 
-    width:110px;
+        text-align:center;
 
-    margin-bottom:15px;
+        padding:15px 0;
 
-}
+    }
 
-.footer-quote{
+    .footer-temple{
 
-    font-size:14px;
+        width:70px;
 
-}
+        margin-bottom:10px;
 
-.mini-footer h5{
+    }
 
-    font-size:20px;
+    .footer-quote{
 
-}
+        font-size:11px;
 
-.scripture-links{
+    }
 
-    gap:12px;
+    .mini-footer h5{
 
-}
+        font-size:16px;
 
-.scripture-links a{
+    }
 
-    font-size:14px;
+    .scripture-links{
 
-}
+        row-gap:8px;
+
+    }
+
+    .scripture-links a{
+
+        font-size:11px;
+
+        padding:0 10px;
+
+    }
 
 }
 
@@ -1617,7 +1746,7 @@ font-size:20px;
                     </div>
 
                     <h3 class="ms-3 mb-0 fw-bold text-primary">
-                        9. Security &amp; More
+                        7. Security &amp; More
                     </h3>
 
                 </div>
